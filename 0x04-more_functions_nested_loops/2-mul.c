@@ -1,16 +1,11 @@
 #include "main.h"
 /**
-*_isdigit -checks for a digit
-*@c: integrer
+*mul - miltiplie 2 int
+*@a: 1integgrer
+*@b: 2nintegrer
 *Return: 0
 */
-int _isdigit(int c)
+int mul(int a, int b)
 {
-	if (c >= '0' && c <= '9')
-	{
-	return (1);
-	}
-	else
-
-	return (0);
+	return (a * b);
 }
