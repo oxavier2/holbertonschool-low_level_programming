@@ -1,10 +1,12 @@
-#ifndef DOGH
-#define DOGH
+#ifndef DOG
+#define DOG
+#include <stdio.h>
+#include <stdlib.h>
 /**
-*struct dog -struct
-*@name: member
-*@age: member
-*@owner: member
+ * struct dog - basic dog descript.
+ * @name: dog name
+ * @age: dog age
+ * @owner: dog owner
 */
 struct dog
 {
@@ -12,7 +14,10 @@ struct dog
 	float age;
 	char *owner;
 };
-void free_dog(dog_t *d);
-void print_dog(struct dog *d);
+/*the prototypes are down below*/
+typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
-#endif
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+#endif /* DOG */
